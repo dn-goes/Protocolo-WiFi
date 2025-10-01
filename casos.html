@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Casos de Sucesso - Wi-Fi (802.11)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(160deg, #e0f7fa, #f0f4c3);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    .case-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 20px;
+    }
+    .case-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      
+    }
+    .case-icon {
+      font-size: 2.5rem;
+      color: #17a2b8;
+      margin-bottom: 15px;
+    }
+    .tips {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+    .case-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .case-img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-info shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">ProtocoloPedia Wi-Fi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="oque.html">O que é?</a></li>
+        <li class="nav-item"><a class="nav-link" href="ficha.html">Ficha Técnica</a></li>
+        <li class="nav-item"><a class="nav-link active" href="casos.html">Casos de Sucesso</a></li>
+        <li class="nav-item"><a class="nav-link" href="alerta.html">Alertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="acao.html">Veja em Ação</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5" id="main-content"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("main-content");
+  container.innerHTML = `
+    <h1 class="text-info text-center"><i class="fas fa-check-circle case-icon"></i> Casos de Sucesso com Wi-Fi</h1>
+    <p class="lead text-center">Wi-Fi (802.11) é essencial para diversos projetos de IoT, oferecendo alta velocidade, confiabilidade e fácil integração.</p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="case-card text-center">
+          <i class="fas fa-home case-icon"></i>
+          <h5>Automação Residencial</h5>
+          <p>Controle de luzes, câmeras e eletrodomésticos inteligentes em tempo real.</p>
+          <img src="https://blog.positivocasainteligente.com.br/wp-content/uploads/2020/05/1-4-1024x683.jpg" alt="Automação Residencial" class="case-img">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="case-card text-center">
+          <i class="fas fa-warehouse case-icon"></i>
+          <h5>Monitoramento Industrial</h5>
+          <p>Coleta de dados de sensores e máquinas em fábricas conectadas para análise preditiva.</p>
+          <img src="https://pahcautomacao.com.br/wp-content/uploads/2023/12/Blog_porque_o_monitoramento_de_ativos_e_crucial_na_industria-1170x650.jpg" alt="Monitoramento Industrial" class="case-img">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="case-card text-center">
+          <i class="fas fa-school case-icon"></i>
+          <h5>Educação e Laboratórios STEM</h5>
+          <p>Projetos educacionais demonstrando conectividade e transmissão de dados via Wi-Fi.</p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6bJU8x-Knhs105W1p1ep4DATum5nRqNZxg&s" alt="Laboratórios STEM" class="case-img">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="case-card text-center">
+          <i class="fas fa-hospital case-icon"></i>
+          <h5>Saúde Inteligente</h5>
+          <p>Monitoramento de pacientes, dispositivos médicos conectados e alertas em hospitais via Wi-Fi.</p>
+          <img src="https://img.odcdn.com.br/wp-content/uploads/2023/10/IA-Medicina-695x500.png" alt="Saúde Inteligente" class="case-img">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="case-card text-center">
+          <i class="fas fa-city case-icon"></i>
+          <h5>Cidades Inteligentes</h5>
+          <p>Semáforos, câmeras de segurança e sensores urbanos conectados, tornando cidades mais seguras e eficientes.</p>
+          <img src="https://planetsmartcity.com.br/wp-content/uploads/2020/06/58b472_532d9ccf315a48acbe338df6713816a5_mv2-1024x588.jpg" alt="Cidades Inteligentes" class="case-img">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="case-card text-center">
+          <i class="fas fa-shopping-cart case-icon"></i>
+          <h5>Varejo Conectado</h5>
+          <p>Etiquetas inteligentes, controle de estoque e experiências interativas para clientes usando Wi-Fi.</p>
+          <img src="https://blog.ciss.com.br/wp-content/uploads/2024/10/varejo-inteligente.jpg" alt="Varejo Conectado" class="case-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="tips mt-4 p-3">
+      <h2 class="text-info"><i class="fas fa-lightbulb text-warning"></i> Dicas para Projetos Wi-Fi</h2>
+      <ul>
+        <li>Use roteadores compatíveis com Wi-Fi 6 ou 6E para maior desempenho.</li>
+        <li>Distribua pontos de acesso para reduzir congestionamento e aumentar o alcance.</li>
+        <li>Combine Wi-Fi com protocolos de baixo consumo (BLE, LoRaWAN) quando necessário.</li>
+        <li>Faça testes de latência e interferência antes de implantar sensores críticos.</li>
+        <li>Monitore continuamente a rede para garantir estabilidade e segurança.</li>
+      </ul>
+    </div>
+  `;
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

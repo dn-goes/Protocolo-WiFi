@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>O que é Wi-Fi (802.11) - ProtocoloPedia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0c3fc, #8ec5fc); /* fundo gradiente roxo/lilás */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    .section-card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 25px;
+    }
+    .section-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .section-icon {
+      font-size: 2rem;
+      color: #6a0dad;
+      margin-bottom: 10px;
+    }
+    .diagram {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+    .tips {
+      background: linear-gradient(135deg, #ffd1ff, #e6ccff);
+      border-left: 6px solid #6a0dad;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 25px;
+    }
+    .tips ul li::before {
+      content: "\f0eb"; 
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      color: #6a0dad;
+      margin-right: 10px;
+    }
+    .highlight {
+      color: #6a0dad;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow" style="background: linear-gradient(90deg, #6a0dad, #b19cd9);">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">ProtocoloPedia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Início</a></li>
+        <li class="nav-item"><a class="nav-link active" href="oque.html"><i class="fas fa-question-circle"></i> O que é?</a></li>
+        <li class="nav-item"><a class="nav-link" href="ficha.html"><i class="fas fa-list"></i> Ficha Técnica</a></li>
+        <li class="nav-item"><a class="nav-link" href="casos.html"><i class="fas fa-lightbulb"></i> Casos de Sucesso</a></li>
+        <li class="nav-item"><a class="nav-link" href="alerta.html"><i class="fas fa-exclamation-triangle"></i> Alertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="acao.html"><i class="fas fa-video"></i> Veja em Ação</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5" id="main-content">
+  <h1 class="text-center text-primary"><i class="fas fa-wifi section-icon"></i> O que é Wi-Fi (802.11)?</h1>
+  <p class="lead text-center">
+    Wi-Fi é uma tecnologia que permite a conexão de dispositivos à internet ou entre si, sem precisar de cabos. Essa conexão acontece por meio de ondas de rádio, em frequências específicas, permitindo liberdade de movimento e praticidade no uso da rede.
+  </p>
+
+  <div class="section-card">
+    <h2><i class="fas fa-lightbulb section-icon"></i> Entendendo com uma analogia</h2>
+    <p>
+      Imagine que seu roteador é como uma torre de controle de aeroporto. Cada dispositivo na sua casa (celular, notebook, TV) é como um avião que precisa enviar e receber "pacotes" de informação. O Wi-Fi organiza esse tráfego, evitando colisões e garantindo que os dados cheguem ao destino certo. As "rotas aéreas" usadas são as frequências de <span class="highlight">2.4 GHz</span> e <span class="highlight">5 GHz</span>, cada uma com suas vantagens.
+    </p>
+  </div>
+
+  <div class="section-card">
+    <h2><i class="fas fa-network-wired section-icon"></i> Como funciona na prática?</h2>
+    <p>
+      O Wi-Fi funciona com um dispositivo central, como um roteador ou ponto de acesso, que emite sinais de rádio. Esses sinais são captados por dispositivos compatíveis (como celulares e notebooks). Os dados são transmitidos por meio de ondas eletromagnéticas. Quando você acessa um site, por exemplo, seu dispositivo envia o pedido ao roteador, que repassa à internet — e a resposta volta pelo mesmo caminho, tudo em milésimos de segundo.
+    </p>
+  </div>
+
+  <div class="section-card">
+    <h2><i class="fas fa-cogs section-icon"></i> Principais características do Wi-Fi</h2>
+    <p>
+      O Wi-Fi oferece <span class="highlight">alta velocidade</span>, conexão simultânea para vários dispositivos e suporte para criptografia, tornando a comunicação mais segura. Além disso, pode ser usado em ambientes abertos ou fechados, adaptando-se a diferentes contextos, como casas, empresas e espaços públicos.
+    </p>
+  </div>
+
+  <div class="section-card">
+    <h2><i class="fas fa-globe section-icon"></i> Onde o Wi-Fi é usado?</h2>
+    <p>
+      O Wi-Fi está presente em praticamente todos os ambientes modernos. Em residências, conecta dispositivos como TVs, assistentes virtuais, câmeras e notebooks. Em empresas, é usado para conectar equipes e sistemas. Também está presente em locais públicos (como cafés, shoppings e escolas) e é essencial em áreas como a <span class="highlight">automação residencial</span> e <span class="highlight">internet das coisas (IoT)</span>.
+    </p>
+  </div>
+
+  <div class="tips">
+    <h2>Dicas Importantes</h2>
+    <ul>
+      <li>Wi-Fi consome mais energia que outras tecnologias como Bluetooth Low Energy (BLE).</li>
+      <li>O alcance pode ser afetado por paredes, móveis ou interferências de outros sinais.</li>
+      <li>Use a frequência <strong>2.4 GHz</strong> para maior alcance e <strong>5 GHz</strong> para maior velocidade.</li>
+      <li>Mantenha o roteador em local central e atualizado para melhor desempenho e segurança.</li>
+    </ul>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

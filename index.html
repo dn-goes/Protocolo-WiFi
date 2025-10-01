@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Wi-Fi (802.11) - ProtocoloPedia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0c3fc, #8ec5fc); /* gradiente roxo/lilás */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    .hero {
+      background: url('https://www.shutterstock.com/image-photo/panorama-aerial-view-cityscape-skyline-260nw-2150364977.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 100px 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .section-card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .section-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .section-icon {
+      font-size: 2.5rem;
+      color: #6a0dad;
+      margin-bottom: 15px;
+    }
+    .feature {
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .diagram {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+    .tips {
+      background: linear-gradient(135deg, #ffd1ff, #e6ccff);
+      border-left: 6px solid #6a0dad;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 25px;
+    }
+    .tips ul li::before {
+      content: "\f0eb"; /* ícone FontAwesome - lightbulb */
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      color: #6a0dad;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow" style="background: linear-gradient(90deg, #6a0dad, #b19cd9);">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">ProtocoloPedia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="oque.html"><i class="fas fa-question-circle"></i> O que é?</a></li>
+        <li class="nav-item"><a class="nav-link" href="ficha.html"><i class="fas fa-list"></i> Ficha Técnica</a></li>
+        <li class="nav-item"><a class="nav-link" href="casos.html"><i class="fas fa-lightbulb"></i> Casos de Sucesso</a></li>
+        <li class="nav-item"><a class="nav-link" href="alerta.html"><i class="fas fa-exclamation-triangle"></i> Alertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="acao.html"><i class="fas fa-video"></i> Veja em Ação</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <!-- Hero -->
+  <div class="hero text-center">
+    <h1 class="display-4 fw-bold">Wi-Fi (802.11)</h1>
+    <p class="lead">A potência da alta velocidade na IoT</p>
+  </div>
+
+  <!-- Cards principais -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="section-card">
+        <i class="fas fa-bolt section-icon"></i>
+        <h5>Alta Velocidade</h5>
+        <p>Transmissão rápida e confiável, essencial para dispositivos conectados em tempo real.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="section-card">
+        <i class="fas fa-network-wired section-icon"></i>
+        <h5>Conectividade Estável</h5>
+        <p>Permite que múltiplos dispositivos IoT se comuniquem simultaneamente sem perda de qualidade.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="section-card">
+        <i class="fas fa-lightbulb section-icon"></i>
+        <h5>Aplicações Inteligentes</h5>
+        <p>Ideal para automação residencial, monitoramento industrial e experiências educacionais.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seção Informativa -->
+  <div class="feature">
+    <h2><i class="fas fa-info-circle section-icon"></i> Como o Wi-Fi Funciona?</h2>
+    <p>Wi-Fi é um protocolo que permite comunicação sem fio usando ondas de rádio. Dispositivos se conectam a roteadores ou pontos de acesso, que distribuem dados para a rede. Frequências comuns: <strong>2.4 GHz</strong> e <strong>5 GHz</strong>.</p>
+    <img src="https://svg.template.creately.com/ForTB6Zq8Lo" alt="Diagrama Wi-Fi" class="diagram">
+  </div>
+
+  <div class="feature">
+    <h2><i class="fas fa-cogs section-icon"></i> Benefícios para IoT</h2>
+    <ul>
+      <li>Alta velocidade de transmissão.</li>
+      <li>Baixa latência para aplicações em tempo real.</li>
+      <li>Compatibilidade com múltiplos dispositivos simultâneos.</li>
+      <li>Fácil integração em sistemas de automação e monitoramento.</li>
+    </ul>
+  </div>
+
+  <!-- Dicas e Observações -->
+  <div class="tips">
+    <h2>Dicas Importantes</h2>
+    <ul>
+      <li>Embora Wi-Fi seja rápido, consome mais energia que BLE ou LoRaWAN.</li>
+      <li>O alcance é limitado em ambientes muito grandes ou com muitas barreiras físicas.</li>
+      <li>Ideal para aplicações internas ou em ambientes urbanos densos.</li>
+    </ul>
+  </div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha Técnica - Wi-Fi (802.11)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #d4fc79, #96e6a1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    .table-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .highlight {
+      color: #28a745;
+      font-weight: bold;
+    }
+    .version-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .version-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .version-icon {
+      font-size: 2rem;
+      color: #28a745;
+      margin-bottom: 10px;
+    }
+    .tips {
+      background: linear-gradient(135deg, #fff1c6, #ffe9b3);
+      border-left: 6px solid #28a745;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 25px;
+    }
+    .tips ul li::before {
+      content: "\f0eb"; 
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      color: #28a745;
+      margin-right: 10px;
+    }
+    /* Timeline estilo */
+    .timeline {
+      position: relative;
+      margin: 40px 0;
+      padding-left: 40px;
+      border-left: 3px solid #28a745;
+    }
+    .timeline-item {
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background-color: #28a745;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 2px #28a745;
+    }
+    .timeline-item h5 {
+      margin-bottom: 5px;
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow" style="background: linear-gradient(90deg, #28a745, #76c893);">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">ProtocoloPedia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="oque.html"><i class="fas fa-question-circle"></i> O que é?</a></li>
+        <li class="nav-item"><a class="nav-link active" href="ficha.html"><i class="fas fa-list"></i> Ficha Técnica</a></li>
+        <li class="nav-item"><a class="nav-link" href="casos.html"><i class="fas fa-lightbulb"></i> Casos de Sucesso</a></li>
+        <li class="nav-item"><a class="nav-link" href="alerta.html"><i class="fas fa-exclamation-triangle"></i> Alertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="acao.html"><i class="fas fa-video"></i> Veja em Ação</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5" id="main-content"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("main-content");
+  container.innerHTML = `
+    <h1 class="text-success text-center"><i class="fas fa-table"></i> Ficha Técnica do Wi-Fi (802.11)</h1>
+    <p class="lead text-center">Explore os detalhes técnicos das versões do Wi-Fi e suas aplicações em IoT.</p>
+
+    <div class="table-container">
+      <table class="table table-bordered table-hover">
+        <thead class="table-success">
+          <tr>
+            <th>Versão</th>
+            <th>Ano</th>
+            <th>Frequência</th>
+            <th>Velocidade Máx.</th>
+            <th>Alcance</th>
+            <th>Consumo</th>
+            <th>Uso Típico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>802.11b</td>
+            <td>1999</td>
+            <td>2.4 GHz</td>
+            <td>11 Mbps</td>
+            <td>30 m interno / 100 m externo</td>
+            <td>Baixo</td>
+            <td>Primeiras redes domésticas</td>
+          </tr>
+          <tr>
+            <td>802.11g</td>
+            <td>2003</td>
+            <td>2.4 GHz</td>
+            <td>54 Mbps</td>
+            <td>30 m interno / 100 m externo</td>
+            <td>Médio</td>
+            <td>Uso em escritórios e casas</td>
+          </tr>
+          <tr>
+            <td>802.11n</td>
+            <td>2009</td>
+            <td>2.4/5 GHz</td>
+            <td>600 Mbps</td>
+            <td>70 m interno / 250 m externo</td>
+            <td>Médio</td>
+            <td>Vídeo HD e múltiplos usuários</td>
+          </tr>
+          <tr>
+            <td>802.11ac</td>
+            <td>2013</td>
+            <td>5 GHz</td>
+            <td>1.3 Gbps</td>
+            <td>35 m interno / 100 m externo</td>
+            <td>Alto</td>
+            <td>Streaming 4K e jogos online</td>
+          </tr>
+           <tr>
+            <td>802.11ah (Wi-Fi HaLow)</td>
+            <td>2016</td>
+            <td>Sub-1 GHz</td>
+            <td>347 Mbps</td>
+            <td>1 km rural</td>
+            <td>Baixo</td>
+            <td>Sensores IoT de longa distância</td>
+          </tr>
+          <tr>
+            <td>802.11ax (Wi-Fi 6)</td>
+            <td>2019</td>
+            <td>2.4 / 5 / 6 GHz</td>
+            <td>9.6 Gbps</td>
+            <td>40 m interno / 100 m externo</td>
+            <td>Alto</td>
+            <td>Ambientes lotados (IoT)</td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="mt-5 text-center text-success"><i class="fas fa-stream"></i> Linha do Tempo Wi-Fi</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h5>1999 - 802.11b</h5>
+        <p>Primeira versão popular do Wi-Fi, ideal para casas pequenas.</p>
+      </div>
+      <div class="timeline-item">
+        <h5>2003 - 802.11g</h5>
+        <p>Mais rápido e estável, usado em escritórios.</p>
+      </div>
+      <div class="timeline-item">
+        <h5>2009 - 802.11n</h5>
+        <p>Introduziu o uso de múltiplas antenas (MIMO).</p>
+      </div>
+      <div class="timeline-item">
+        <h5>2013 - 802.11ac</h5>
+        <p>Velocidade Gigabit, foco em vídeo 4K.</p>
+      </div>
+      <div class="timeline-item">
+        <h5>2016 - 802.11ah (HaLow)</h5>
+        <p>Versão especial para IoT rural com longo alcance.</p>
+      </div>
+      <div class="timeline-item">
+        <h5>2019 - 802.11ax (Wi-Fi 6)</h5>
+        <p>Alta eficiência em locais com muitos dispositivos.</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="version-card text-center">
+          <i class="fas fa-bolt version-icon"></i>
+          <h5>Alta Velocidade</h5>
+          <p>Wi-Fi 6 e 802.11ac fornecem transmissões rápidas ideais para streaming e automação IoT.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="version-card text-center">
+          <i class="fas fa-arrows-alt version-icon"></i>
+          <h5>Longo Alcance</h5>
+          <p>Wi-Fi HaLow é perfeito para sensores de longa distância, especialmente em áreas rurais.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="version-card text-center">
+          <i class="fas fa-battery-half version-icon"></i>
+          <h5>Eficiência Energética</h5>
+          <p>Versões antigas e HaLow consomem menos energia, ideal para dispositivos IoT de baixo consumo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips mt-4">
+      <h2><i class="fas fa-lightbulb text-warning"></i> Dicas Técnicas</h2>
+      <ul>
+        <li><span class="highlight">Wi-Fi 6</span> é ideal para ambientes com muitos dispositivos IoT.</li>
+        <li><span class="highlight">Wi-Fi HaLow</span> é recomendado para sensores de longo alcance e baixo consumo.</li>
+        <li>Combine múltiplas bandas para reduzir interferência e melhorar a confiabilidade.</li>
+        <li>Verifique a compatibilidade dos dispositivos com a versão do Wi-Fi disponível.</li>
+        <li>Atualize firmware dos roteadores para máxima performance e segurança.</li>
+      </ul>
+    </div>
+  `;
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

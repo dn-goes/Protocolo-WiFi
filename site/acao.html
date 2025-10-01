@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Veja em Ação - Wi-Fi (802.11)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(160deg, #e6f0ff, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    .video-container iframe {
+      border: 3px solid #0d6efd;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+    }
+    .tips {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .project-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .project-icon {
+      font-size: 2rem;
+      color: #0d6efd;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">ProtocoloPedia Wi-Fi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="oque.html">O que é?</a></li>
+        <li class="nav-item"><a class="nav-link" href="ficha.html">Ficha Técnica</a></li>
+        <li class="nav-item"><a class="nav-link" href="casos.html">Casos de Sucesso</a></li>
+        <li class="nav-item"><a class="nav-link" href="alerta.html">Alertas</a></li>
+        <li class="nav-item"><a class="nav-link active" href="acao.html">Veja em Ação</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5" id="main-content">
+  <div class="text-center">
+    <h1 class="text-primary fw-bold"><i class="fas fa-video"></i> Veja o Wi-Fi em Ação</h1>
+    <p class="lead">Explore projetos reais e demonstrações usando Wi-Fi na Internet das Coisas.</p>
+
+    <div class="row">
+      <div class="col-md-12" style="margin-bottom: 30px;">
+        <div class="video-container ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/DRaTbGYdkvQ?si=bFwjcP7FjFS_GNR7" 
+                  title="Wi-Fi Demo" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips">
+      <h2><i class="fas fa-lightbulb text-warning"></i> Dicas Práticas</h2>
+      <ul>
+        <li>Use roteadores modernos compatíveis com Wi-Fi 6 para melhor desempenho.</li>
+        <li>Centralize o roteador para garantir cobertura uniforme.</li>
+        <li>Para dispositivos de baixa energia, considere Wi-Fi HaLow.</li>
+        <li>Teste velocidade e latência antes de implantar projetos críticos.</li>
+        <li>Monitore o consumo energético em sensores conectados via Wi-Fi.</li>
+      </ul>
+    </div>
+
+    <h2 class="mt-5 mb-4 text-primary text-center"><i class="fas fa-network-wired"></i> Exemplos de Projetos</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="project-card">
+          <i class="fas fa-home project-icon"></i>
+          <h5>Automação Residencial</h5>
+          <p>Luzes, câmeras e sensores inteligentes conectados em tempo real.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project-card">
+          <i class="fas fa-warehouse project-icon"></i>
+          <h5>Monitoramento Industrial</h5>
+          <p>Coleta de dados de máquinas e sensores para manutenção preditiva.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project-card">
+          <i class="fas fa-school project-icon"></i>
+          <h5>Educação e STEM</h5>
+          <p>Laboratórios de IoT demonstrando conectividade e transmissão de dados.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips mt-4">
+      <h2><i class="fas fa-info-circle text-info"></i> Observações Importantes</h2>
+      <ul>
+        <li>Garanta que todos os dispositivos sejam compatíveis com o padrão de Wi-Fi usado.</li>
+        <li>Verifique interferências de outros equipamentos na faixa de frequência utilizada.</li>
+        <li>Combine Wi-Fi com protocolos de baixo consumo para otimizar eficiência energética.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    console.log("Página 'Veja em Ação' carregada com sucesso!");
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

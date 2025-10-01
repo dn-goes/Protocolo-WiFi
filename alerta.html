@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Alertas - Wi-Fi (802.11)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(160deg, #fff8f0, #ffe6cc);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    .alert-card {
+      background-color: #ffffff;
+      border: 2px solid #ffc107;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .alert-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .alert-icon {
+      margin-right: 10px;
+    }
+    .example-img {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      margin-top: 15px;
+      object-fit: cover;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+    .tips {
+      background-color: #fff;
+      border-left: 6px solid #ffc107;
+      border-radius: 10px;
+      padding: 25px;
+      margin-top: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .tips h2 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">ProtocoloPedia Wi-Fi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="oque.html">O que é?</a></li>
+        <li class="nav-item"><a class="nav-link" href="ficha.html">Ficha Técnica</a></li>
+        <li class="nav-item"><a class="nav-link" href="casos.html">Casos de Sucesso</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold" href="alerta.html">Alertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="acao.html">Veja em Ação</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5" id="main-content"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("main-content");
+  container.innerHTML = `
+    <h1 class="text-danger text-center mb-4"><i class="fas fa-exclamation-triangle alert-icon"></i> Alertas e Limitações do Wi-Fi</h1>
+    <p class="lead text-center mb-5">Apesar de sua popularidade, o Wi-Fi apresenta situações em que pode gerar problemas em projetos IoT. Conhecer esses alertas ajuda a evitar falhas.</p>
+    
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="alert-card">
+          <h2><i class="fas fa-times-circle text-warning alert-icon"></i> Limitações de Alcance</h2>
+          <p>O Wi-Fi padrão não é ideal para áreas rurais extensas ou para sensores a grandes distâncias. Para isso, use protocolos de longo alcance como <strong>LoRaWAN</strong>.</p>
+          <img src="https://blog.osirnet.com.br/wp-content/uploads/2024/12/internet-rural-osirnet.png" alt="Wi-Fi em área rural" class="example-img">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="alert-card">
+          <h2><i class="fas fa-battery-empty text-danger alert-icon"></i> Consumo de Energia</h2>
+          <p>Dispositivos que necessitam operar por anos com baterias pequenas não são adequados para Wi-Fi, que consome mais energia que BLE ou ZigBee.</p>
+          <img src="https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2024/12/03/279484353-dicas-para-diminuir-o-consumo-de-energia-no-verao.jpg" alt="Consumo de energia" class="example-img">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="alert-card">
+          <h2><i class="fas fa-wave-square text-info alert-icon"></i> Interferência de Sinais</h2>
+          <p>Ambientes com muitas redes 2.4GHz podem gerar instabilidade. Prefira Wi-Fi 5/6 ou múltiplas bandas para reduzir interferência.</p>
+          <img src="https://r3networks.com.br/wp-content/uploads/2023/01/89d3b4887952ca0718c15c8499c4e16e.gif" alt="Interferência Wi-Fi" class="example-img">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="alert-card">
+          <h2><i class="fas fa-lock text-success alert-icon"></i> Segurança</h2>
+          <p>Redes Wi-Fi abertas ou sem criptografia podem ser vulneráveis a ataques. Sempre utilize <strong>WPA3</strong> e atualize senhas regularmente.</p>
+          <img src="https://rgainfo.com/2021/wp-content/uploads/2018/11/wifi.png" alt="Segurança Wi-Fi" class="example-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="tips mt-5">
+      <h2 class="text-warning"><i class="fas fa-lightbulb"></i> Boas Práticas e Dicas Avançadas</h2>
+      <ul>
+        <li>Realize estudos de cobertura antes da instalação de dispositivos críticos.</li>
+        <li>Use repetidores ou pontos de acesso adicionais para eliminar zonas mortas.</li>
+        <li>Combine Wi-Fi com outros protocolos em redes híbridas IoT.</li>
+        <li>Monitore constantemente o desempenho da rede e latência.</li>
+        <li>Atualize firmware de roteadores e dispositivos para maior segurança e estabilidade.</li>
+      </ul>
+    </div>
+  `;
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

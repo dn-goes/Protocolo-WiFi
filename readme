@@ -1,0 +1,65 @@
+# 🌐 Projeto - Evolução do Wi-Fi  
+
+Este projeto foi desenvolvido com o objetivo de apresentar de forma **educativa, visual e organizada** a evolução das tecnologias **Wi-Fi**, abordando suas diferentes versões, características técnicas e principais usos em diferentes contextos.  
+
+A proposta é facilitar o entendimento sobre como a internet sem fio foi evoluindo ao longo do tempo, impactando diretamente o dia a dia das pessoas, empresas e dispositivos conectados.  
+
+---
+
+## 📖 O que foi feito
+- Criação de uma **página web responsiva** estruturada em HTML e estilizada com Bootstrap.  
+- Elaboração de **tabelas comparativas detalhadas** entre as versões do Wi-Fi.  
+- Destaque para **frequências, velocidades, alcances, consumo de energia e aplicações típicas** de cada versão.  
+- Organização do conteúdo em seções bem definidas:  
+  - Introdução ao conceito de Wi-Fi.  
+  - Explicação sobre as gerações e versões (de 802.11b a 802.11ah).  
+  - Tabela comparativa clara e didática.  
+  - Curiosidades sobre a tecnologia e seu impacto social.  
+- Uso de **ícones e elementos gráficos** para tornar o conteúdo mais atrativo e de fácil compreensão.  
+- Preparação de uma documentação que pode servir tanto como **material de estudo** quanto como **apresentação em sala de aula**.  
+
+---
+
+## 🛠️ Tecnologias utilizadas
+- **HTML5** → para a estruturação do conteúdo.  
+- **CSS3 (com Bootstrap)** → para a estilização, responsividade e organização do layout.  
+- **Bootstrap Components** → tabelas, containers e formatação visual moderna.  
+- **Font Awesome** → ícones representativos que ilustram cada seção.  
+- **JavaScript (Bootstrap JS)** → para pequenas interações e funcionalidades visuais.  
+
+---
+
+## 📚 Conceitos abordados
+- Definição de **Wi-Fi** e sua importância como tecnologia de comunicação sem fio.  
+- **Evolução das versões** do protocolo IEEE 802.11:  
+  - 802.11b → primeiras redes domésticas.  
+  - 802.11g → melhorias em estabilidade.  
+  - 802.11n → expansão para vídeo HD e múltiplos usuários.  
+  - 802.11ac → foco em streaming e jogos.  
+  - 802.11ax (Wi-Fi 6) → ambientes densos e conectividade massiva.  
+  - 802.11ah (Wi-Fi HaLow) → soluções de longo alcance e baixo consumo para IoT.  
+- Comparação entre **frequências (2.4GHz, 5GHz, 6GHz e Sub-1GHz)** e seus impactos no alcance e velocidade.  
+- Importância do **consumo energético** em dispositivos móveis e IoT.  
+- Discussão sobre **aplicações reais**:  
+  - Conectividade doméstica.  
+  - Redes corporativas.  
+  - Automação residencial (smart home).  
+  - IoT e sensores em áreas urbanas e rurais.  
+- Curiosidades:  
+  - O nome **Wi-Fi** foi criado apenas como marca comercial, não é uma abreviação.  
+  - O Wi-Fi 6 pode chegar a velocidades **até 9.6 Gbps**.  
+  - O Wi-Fi HaLow é voltado para **áreas rurais e dispositivos IoT de longo alcance**.  
+
+---
+
+## 👨‍💻 Criadores
+- **Daniel Goes**  
+- **Gabriel Espadoni**  
+- **Anthony**  
+- **Ana Mioto**  
+- **Giovana G.**  
+
+---
+
+## 📌 Observação
+Este material pode ser utilizado como **referência de estudo**, **apresentação acadêmica** ou **introdução ao tema de redes sem fio**, servindo como um recurso didático para alunos, professores e interessados na área de tecnologia.
